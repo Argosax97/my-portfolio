@@ -43,8 +43,8 @@ export const data = [
     id: Math.floor(Math.random() * 1000),
   },
   {
-    title: "Folio 8",
-    link: "",
+    title: "Sticky Notes",
+    link: "https://timely-dasik-2e8089.netlify.app/",
     img: "https://daks2k3a4ib2z.cloudfront.net/56104995fd4f22cf7e335ea0/56148bf08924f1f620d590c2_astrav1-p-500x.jpeg",
     id: Math.floor(Math.random() * 1000),
   },
