@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import bg from "./assets/bg.jpg"
 import WelcomeSection from "./Components/WelcomeSection";
 import Header from "./Components/Header";
 import Folios from "./Components/Folios";
@@ -11,10 +12,7 @@ import Scroll from "./Components/Scroll";
 const App = () => {
   return (
     <main>
-      <img
-        className="bg"
-        src="http://uploads.webflow.com/560f27977849849d0e1fee5c/5614b716f91f1b0b7cb92ed4_fe4a5cbf.jpg"
-      />
+      <img className="bg" src={bg} />
       <Header />
       <WelcomeSection />
       <Folios />
