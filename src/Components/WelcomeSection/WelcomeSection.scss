@@ -1,0 +1,59 @@
+.welcome-section {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    margin: auto;
+    width: 45vw;
+    font-size: 2.5rem;
+  }
+}
+.outline {
+  position: relative;
+  text-transform: uppercase;
+  background: var(--main-gray);
+  border-radius: 5px;
+
+  &::before,
+  &::after {
+    content: "";
+    border-radius: 5px;
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    background: linear-gradient(
+      45deg,
+      #630038,
+      #005a0c,
+      #02b802,
+      #ff0000,
+      #a5a501,
+      #630038,
+      #005a0c,
+      #02b802,
+      #ff0000,
+      #a5a501
+    );
+    background-size: 300%;
+    animation: animate 20s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+}

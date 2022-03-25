@@ -1,0 +1,15 @@
+.scroll-top{
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  color: #8585858a;
+  padding: .5rem .7rem;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.5);
+  cursor: pointer;
+  &:hover{
+  background-color: rgb(128, 128, 128);
+  color: #4b4b4b;
+transition: .3s;
+  }
+}

@@ -1,0 +1,32 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+.about-titile {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10% 0 5%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.about-image {
+  width: 125px;
+  margin-top: 1.5rem;
+  border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+}
+.about-text {
+  color: white;
+  max-width: 900px;
+  font-family: serif;
+  font-size: 1.5rem;
+}
