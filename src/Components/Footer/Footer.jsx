@@ -5,21 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <h3>Credits</h3>
-      <span>Alexander Hakobyan</span>
-      <div className="socials">
-        <a href="#">
-          <i className="fa-brands fa-facebook" />
-        </a>
-        <a href="#">
-          <i className="fa-brands fa-linkedin" />
-        </a>
-        <a href="#">
-          <i className="fa-brands fa-instagram" />
-        </a>
-        <a href="#">
-          <i className="fa-brands fa-twitter" />
-        </a>
-      </div>
+      <span>Alexander Hakobian</span>
     </footer>
   );
 };

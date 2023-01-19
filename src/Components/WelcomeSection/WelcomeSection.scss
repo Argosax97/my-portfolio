@@ -13,11 +13,13 @@
     font-size: 2.5rem;
   }
 }
+
 .outline {
   position: relative;
   text-transform: uppercase;
   background: var(--main-gray);
   border-radius: 5px;
+  padding: .5rem;
 
   &::before,
   &::after {
@@ -30,21 +32,22 @@
     top: -3px;
     left: -3px;
     background: linear-gradient(
-      45deg,
-      #630038,
-      #005a0c,
-      #02b802,
-      #ff0000,
-      #a5a501,
-      #630038,
-      #005a0c,
-      #02b802,
-      #ff0000,
-      #a5a501
+                    45deg,
+                    #630038,
+                    #005a0c,
+                    #02b802,
+                    #ff0000,
+                    #a5a501,
+                    #630038,
+                    #005a0c,
+                    #02b802,
+                    #ff0000,
+                    #a5a501
     );
     background-size: 300%;
     animation: animate 20s linear infinite;
   }
+
   @keyframes animate {
     0% {
       background-position: 0 0;
@@ -54,6 +57,19 @@
     }
     100% {
       background-position: 0 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    height: 90vh;
+    padding: 24px;
+
+    h1 {
+      margin: auto;
+      width: auto;
+      font-size: 1.5rem;
     }
   }
 }

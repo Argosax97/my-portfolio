@@ -4,7 +4,8 @@
   align-items: center;
   padding: 0 2rem;
 }
-.about-titile {
+
+.about-title {
   color: white;
   font-size: 3rem;
   display: flex;
@@ -20,13 +21,35 @@
   width: 125px;
   margin-top: 1.5rem;
   border-radius: 50%;
+
   img {
     border-radius: 50%;
   }
 }
+
 .about-text {
   color: white;
   max-width: 900px;
-  font-family: serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    display: flex;
+    padding: 0 24px;
+    margin: 32px 0;
+  }
+
+  .about-title {
+    color: white;
+    font-size: 2rem;
+    margin: auto auto 24px;
+  }
+
+  .about-text {
+    color: white;
+    max-width: unset;
+    font-size: 1.2rem;
+  }
 }

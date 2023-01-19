@@ -13,56 +13,80 @@
     margin: 10% auto;
     font-family: Georgia, "Times New Roman", Times, serif;
   }
+
   .contact-form {
     display: flex;
     flex-direction: column;
+    gap: 18px;
     margin: auto;
     width: 450px;
     color: white;
     text-align: left;
 
-    label {
-      color: rgb(218, 218, 218);
-      margin: 0.5rem 0;
-    }
-    input {
-      color: white;
-      font-size: 1.5rem;
-      border-radius: 3px;
-      padding: 0.5rem;
-      margin: 0 0 1rem 0;
-      border: none;
-      background-color: #4b4b4b;
-    }
-    textarea {
-      color: white;
-      font-size: 1.5rem;
-      border-radius: 3px;
-      padding: 0.5rem;
-      margin: 0 0 1rem 0;
-      border: none;
-      background-color: #4b4b4b;
-      min-height: 100px;
-      height: 100px;
-      max-height: 250px;
-      min-width: 450px;
-      max-width: 450px;
-      &::-webkit-scrollbar {
-        width: 5px;
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      span {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: #F14646;
       }
-      &:-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+      label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(218, 218, 218);
       }
-      &::-webkit-scrollbar-thumb {
-        background-color: darkgrey;
-        outline: 1px solid slategrey;
-        border-radius: 5px;
+
+      input {
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 3px;
+        padding: 0.5rem;
+        border: none;
+        background-color: #4b4b4b;
       }
-      
+
+      textarea {
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 3px;
+        padding: 0.5rem;
+        border: none;
+        resize: none;
+        background-color: #4b4b4b;
+        min-height: 100px;
+        height: 100px;
+        max-height: 250px;
+        min-width: 450px;
+        max-width: 450px;
+
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          outline: 1px solid slategrey;
+          border-radius: 5px;
+        }
+      }
     }
+
   }
+
   .submit-btn {
     text-align: center;
+
     button {
       border: var(--main-green) solid;
       color: var(--main-green);
@@ -71,11 +95,119 @@
       margin: 1rem auto;
       padding: 0.5rem 2rem;
       font-size: 1rem;
+
       &:hover {
         border-color: white;
         color: white;
         transition: 0.5s;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 32px 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    h1 {
+      width: fit-content;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin: auto;
+      width: 100%;
+
+      .inputContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        span {
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 16px;
+          letter-spacing: 0.2px;
+          color: #F14646;
+        }
+
+        label {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: rgb(218, 218, 218);
+        }
+
+        input {
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 3px;
+          padding: 0.5rem;
+          border: none;
+          background-color: #4b4b4b;
+        }
+
+        textarea {
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 3px;
+          padding: 0.5rem;
+          border: none;
+          resize: none;
+          background-color: #4b4b4b;
+          min-height: 100px;
+          height: 100px;
+          max-height: 250px;
+          min-width: auto;
+          max-width: unset;
+
+          &::-webkit-scrollbar {
+            width: 5px;
+          }
+
+          &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+            border-radius: 5px;
+          }
+        }
+      }
+
+    }
+
+    .submit-btn {
+      text-align: center;
+
+      button {
+        border: var(--main-green) solid;
+        color: var(--main-green);
+        border-radius: 5px;
+        background: none;
+        margin: 1rem auto;
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+
+        &:hover {
+          border-color: white;
+          color: white;
+          transition: 0.5s;
+          cursor: pointer;
+        }
       }
     }
   }

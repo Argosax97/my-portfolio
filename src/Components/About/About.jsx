@@ -1,11 +1,11 @@
 import React from "react";
-import "./About.scss";
 import img from "../../assets/Alexander Hakobyan.jpg";
+import "./About.scss";
 
 const About = () => {
   return (
     <section className="about-section">
-      <div className="about-titile">
+      <div className="about-title">
         <h1>A little about me.</h1>
         <div className="about-image">
           <img src={img} alt="Alexander H." width="100%" />
