@@ -9,7 +9,6 @@ const Folios = () => {
         <h2>Latest Work</h2>
         <div className="folio-wrapper">
           {data.map((item) => {
-            console.log(item);
             return (
               <div
                 key={item.id}

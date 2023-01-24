@@ -2,7 +2,7 @@ export const data = [
   {
     title: "PortMind",
     link: "https://portmind.com/",
-    img: "https://scontent.fevn7-1.fna.fbcdn.net/v/t39.30808-6/299792915_100847679419393_7265273155232103845_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YRx0LR0SsYUAX85pyoE&_nc_ht=scontent.fevn7-1.fna&oh=00_AfCoWFjDSby4WzlUS6HYO1wnuUD1nUl0ZbglvTDjW70dSQ&oe=63CEB265",
+    img: "https://neapixt.portmind.com/wp-content/uploads/2022/08/logo-2.svg",
     id: Math.floor(Math.random() * 1000),
   },
   {

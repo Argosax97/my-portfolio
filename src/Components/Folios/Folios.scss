@@ -1,5 +1,4 @@
 .folio-section {
-  //   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +10,7 @@
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.57), #222);
     width: 100%;
   }
+
   h2 {
     color: white;
     font-size: 2rem;
@@ -21,6 +21,7 @@
     text-align: center;
     border-bottom: var(--main-gray) solid 5px;
   }
+
   .folio-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -34,19 +35,23 @@
       max-width: 250px;
       max-height: 200px;
     }
+
     div {
       color: white;
       display: flex;
       justify-content: space-around;
       align-items: center;
       width: 250px;
+      min-height: 200px;
       margin: 0.5rem;
       border-radius: 5px;
+
       &:hover {
         cursor: pointer;
         filter: opacity(0.75);
         transition: 0.5s;
       }
+
       &:hover p {
         display: block;
         text-decoration: none;
@@ -56,9 +61,10 @@
         font-weight: bold;
         width: 200px;
         padding: 5px;
-          border-bottom-right-radius: 25%;
-          border-top-right-radius: 25%;
+        border-bottom-right-radius: 25%;
+        border-top-right-radius: 25%;
       }
+
       p {
         position: absolute;
         bottom: 50%;
